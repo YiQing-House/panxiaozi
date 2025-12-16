@@ -75,42 +75,75 @@ export async function getResourcePageList(
   return { list, total };
 }
 
-// 获取热门资源的核心逻辑
+// 获取热门资源的核心逻辑 - 整合多个分类
 async function getHotResourceCore(): Promise<string[]> {
   let list: string[] = [];
   try {
-    // const configDayUrl = `${process.env.HOT_MOVIE_DAY_API}`;
-    // const configDay = await fetch(configDayUrl);
-    // const configDayResult = await configDay.json();
-    // const dateStr = configDayResult.data.DAILY.endDay;
-    // // 构造请求参数
-    // const params = new URLSearchParams({
-    //   type: "DAILY",
-    //   category: "NETWORK_DRAMA",
-    //   date: dateStr,
-    //   attach: "gdi",
-    //   orderTitle: "gdi",
-    //   platformId: "0",
-    // });
-    // ${params.toString()
-    const url = `${process.env.HOT_MOVIE_API}`;
-    const res = await fetch(url);
-    const result = await res.json();
-    list = result.data.map((item: { name: string }) => item.name);
-    if (list.length > 10) {
-      list = list.slice(0, 10);
+    const baseUrl = process.env.HOT_API_BASE || "https://dailyhot-api.qhouse.asia";
+
+    // 定义要获取的热榜接口
+    const endpoints = [
+      "/douban-movie",    // 豆瓣电影
+      "/maoyan-web",      // 猫眼网播电视剧
+      "/bilibili-drama",  // B站电视剧
+    ];
+
+    // 并行获取所有热榜数据
+    const allItems: { title: string; hot: number }[] = [];
+
+    await Promise.all(
+      endpoints.map(async (endpoint) => {
+        try {
+          const res = await fetch(`${baseUrl}${endpoint}`, {
+            next: { revalidate: 1800 } // 30分钟缓存
+          });
+          if (!res.ok) return;
+          const result = await res.json();
+          if (result.data && Array.isArray(result.data)) {
+            result.data.forEach((item: { title?: string; name?: string; hot?: number }) => {
+              const title = item.title || item.name;
+              if (title) {
+                allItems.push({
+                  title: title,
+                  hot: item.hot || 0,
+                });
+              }
+            });
+          }
+        } catch (e) {
+          console.error(`获取 ${endpoint} 失败:`, e);
+        }
+      })
+    );
+
+    // 按热度排序并去重
+    allItems.sort((a, b) => b.hot - a.hot);
+    const seen = new Set<string>();
+    for (const item of allItems) {
+      if (!seen.has(item.title) && list.length < 10) {
+        seen.add(item.title);
+        list.push(item.title);
+      }
     }
+
     if (list.length === 0) {
       throw new Error("获取热门资源失败");
     }
   } catch (error) {
     console.error(error);
+    // 降级：从数据库获取热门资源
     const result = await db
       .select()
       .from(resource)
       .orderBy(desc(resource.hotNum), desc(resource.id))
       .limit(10);
-    list = result.map((item) => item.title);
+    // 提取短标题（去除年份、画质等）
+    list = result.map((item) => {
+      const title = item.title || "";
+      // 提取主标题（括号前的部分）
+      const match = title.match(/^([^(\[【（]+)/);
+      return match ? match[1].trim() : title;
+    });
   }
   return list;
 }
