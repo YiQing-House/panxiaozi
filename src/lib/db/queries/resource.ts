@@ -116,13 +116,25 @@ async function getHotResourceCore(): Promise<string[]> {
       })
     );
 
+    // 清理标题：去除评分、括号内容等
+    const cleanTitle = (title: string): string => {
+      return title
+        .replace(/\s*\d+(\.\d+)?\s*$/, "")  // 去掉末尾的评分如 "7.6"
+        .replace(/【.*?】/g, "")             // 去掉【】内容
+        .replace(/\[.*?\]/g, "")             // 去掉[]内容
+        .replace(/（.*?）/g, "")             // 去掉（）内容
+        .replace(/\(.*?\)/g, "")             // 去掉()内容
+        .trim();
+    };
+
     // 按热度排序并去重
     allItems.sort((a, b) => b.hot - a.hot);
     const seen = new Set<string>();
     for (const item of allItems) {
-      if (!seen.has(item.title) && list.length < 10) {
-        seen.add(item.title);
-        list.push(item.title);
+      const cleaned = cleanTitle(item.title);
+      if (cleaned && !seen.has(cleaned) && list.length < 10) {
+        seen.add(cleaned);
+        list.push(cleaned);
       }
     }
 
