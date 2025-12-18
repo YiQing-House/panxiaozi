@@ -7,7 +7,7 @@ import type { MetadataRoute } from "next";
 export const revalidate = 300;
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pan.xiaozi.cc";
-const SITEMAP_SIZE = 50000; // Google's limit per sitemap 50000
+const SITEMAP_SIZE = 5000; // 减小每页大小避免查询超时
 
 export async function generateSitemaps() {
   const totalResources = await getResourceCount();

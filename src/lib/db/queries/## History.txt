@@ -1,0 +1,67 @@
+## History
+[167 Commits](https://github.com/imsyy/DailyHotApi/commits/master/)
+[.github](https://github.com/imsyy/DailyHotApi/tree/master/.github)
+[.github](https://github.com/imsyy/DailyHotApi/tree/master/.github)
+[public](https://github.com/imsyy/DailyHotApi/tree/master/public)
+[public](https://github.com/imsyy/DailyHotApi/tree/master/public)
+[src](https://github.com/imsyy/DailyHotApi/tree/master/src)
+[src](https://github.com/imsyy/DailyHotApi/tree/master/src)
+[.dockerignore](https://github.com/imsyy/DailyHotApi/blob/master/.dockerignore)
+[.dockerignore](https://github.com/imsyy/DailyHotApi/blob/master/.dockerignore)
+[.env.example](https://github.com/imsyy/DailyHotApi/blob/master/.env.example)
+[.env.example](https://github.com/imsyy/DailyHotApi/blob/master/.env.example)
+[.gitignore](https://github.com/imsyy/DailyHotApi/blob/master/.gitignore)
+[.gitignore](https://github.com/imsyy/DailyHotApi/blob/master/.gitignore)
+[.npmignore](https://github.com/imsyy/DailyHotApi/blob/master/.npmignore)
+[.npmignore](https://github.com/imsyy/DailyHotApi/blob/master/.npmignore)
+[.prettierignore](https://github.com/imsyy/DailyHotApi/blob/master/.prettierignore)
+[.prettierignore](https://github.com/imsyy/DailyHotApi/blob/master/.prettierignore)
+[.prettierrc.js](https://github.com/imsyy/DailyHotApi/blob/master/.prettierrc.js)
+[.prettierrc.js](https://github.com/imsyy/DailyHotApi/blob/master/.prettierrc.js)
+[CODE_OF_CONDUCT.md](https://github.com/imsyy/DailyHotApi/blob/master/CODE_OF_CONDUCT.md)
+[CODE_OF_CONDUCT.md](https://github.com/imsyy/DailyHotApi/blob/master/CODE_OF_CONDUCT.md)
+[Dockerfile](https://github.com/imsyy/DailyHotApi/blob/master/Dockerfile)
+[Dockerfile](https://github.com/imsyy/DailyHotApi/blob/master/Dockerfile)
+[LICENSE](https://github.com/imsyy/DailyHotApi/blob/master/LICENSE)
+[LICENSE](https://github.com/imsyy/DailyHotApi/blob/master/LICENSE)
+[README.md](https://github.com/imsyy/DailyHotApi/blob/master/README.md)
+[README.md](https://github.com/imsyy/DailyHotApi/blob/master/README.md)
+[deploy.sh](https://github.com/imsyy/DailyHotApi/blob/master/deploy.sh)
+[deploy.sh](https://github.com/imsyy/DailyHotApi/blob/master/deploy.sh)
+[docker-compose.yml](https://github.com/imsyy/DailyHotApi/blob/master/docker-compose.yml)
+[docker-compose.yml](https://github.com/imsyy/DailyHotApi/blob/master/docker-compose.yml)
+[ecosystem.config.cjs](https://github.com/imsyy/DailyHotApi/blob/master/ecosystem.config.cjs)
+[ecosystem.config.cjs](https://github.com/imsyy/DailyHotApi/blob/master/ecosystem.config.cjs)
+[eslint.config.js](https://github.com/imsyy/DailyHotApi/blob/master/eslint.config.js)
+[eslint.config.js](https://github.com/imsyy/DailyHotApi/blob/master/eslint.config.js)
+[package.json](https://github.com/imsyy/DailyHotApi/blob/master/package.json)
+[package.json](https://github.com/imsyy/DailyHotApi/blob/master/package.json)
+[pnpm-lock.yaml](https://github.com/imsyy/DailyHotApi/blob/master/pnpm-lock.yaml)
+[pnpm-lock.yaml](https://github.com/imsyy/DailyHotApi/blob/master/pnpm-lock.yaml)
+[tsconfig.json](https://github.com/imsyy/DailyHotApi/blob/master/tsconfig.json)
+[tsconfig.json](https://github.com/imsyy/DailyHotApi/blob/master/tsconfig.json)
+
+## Repository files navigation
+- [README](https://github.com/imsyy/DailyHotApi)
+- [Code of conduct](https://github.com/imsyy/DailyHotApi)
+- [MIT license](https://github.com/imsyy/DailyHotApi)
+[README](https://github.com/imsyy/DailyHotApi)
+[Code of conduct](https://github.com/imsyy/DailyHotApi)
+[MIT license](https://github.com/imsyy/DailyHotApi)
+
+## 今日热榜
+一个聚合热门数据的 API 接口
+
+## 🚩 特性
+- 极快响应，便于开发
+- 支持 RSS 模式和 JSON 模式
+- 支持多种部署方式
+- 简明的路由目录，便于新增
+
+## 👀 示例
+这里是使用该 API 的示例站点 示例站点可能由于访问量或者长久未维护而访问异常 若您也使用了本 API 搭建了网站，欢迎提交您的站点链接
+- [今日热榜 - https://hot.imsyy.top/](https://hot.imsyy.top/)
+[今日热榜 - https://hot.imsyy.top/](https://hot.imsyy.top/)
+
+## 📊 接口总览
+示例站点运行于海外服务器，部分国内站点可能存在访问异常，请以实际情况为准

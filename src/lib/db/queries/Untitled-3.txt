@@ -1,0 +1,125 @@
+## https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0 请求参数
+该接口信息正在审核中，审核通过后即可展示！
+
+## https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0 返回示例
+该接口信息正在审核中，审核通过后即可展示！
+
+## https://api.aa1.cn/doc/baiduremen.html#%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0 返回参数
+该开发者未填写返回信息，请联系开发者核对！
+
+## https://api.aa1.cn/doc/baiduremen.html#%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B 小白教程
+本教程帮助用户快速对接接口，现已支持智能生成代码
+
+```
+现已支持智能生成代码
+```
+
+[为照顾小白，特意编写此对接文档教程，若有不懂请及时联系接口维护者。
+
+
+
+
+            小白快速对接「」简易教程](https://api.aa1.cn/goto/t.aa1.cn/929f)
+
+## https://api.aa1.cn/doc/baiduremen.html#%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81 生成代码
+支持生成对接接口代码，多语言选择，助力学生对接！
+该接口信息正在审核中，审核通过后即可展示！
+
+## https://api.aa1.cn/doc/baiduremen.html#%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95 实时调试
+部分视频、图片或其他接口报错、空值并不代表无法对接，请在本地尝试请求参数接口
+
+```
+GET
+```
+
+
+```
+POST
+```
+
+
+```
+PUT
+```
+
+
+```
+HEAD
+```
+
+
+```
+TRACE
+```
+
+
+```
+DELETE
+```
+
+
+```
+CONNECT
+```
+
+
+```
+OPTIONS
+```
+
+温馨提示：请修改请求参数，未修改可能返回报错；
+
+```
+修改
+```
+
+
+```
+返回报错
+```
+
+- https://api.aa1.cn/img/wechat.png
+
+                                            微信
+
+- https://api.aa1.cn/img/alipay.png
+
+                                            支付宝
+
+- https://api.aa1.cn/img/wechat.png
+
+                                            微信
+
+- https://api.aa1.cn/img/alipay.png
+
+                                            支付宝
+
+[赞赏者名单
+                                        因为你们的支持让我意识到写文章的价值🙏](https://api.aa1.cn/)
+[站长联系方式](https://api.aa1.cn/go.php?url=qq.wpon.cn)
+[#99+](https://api.aa1.cn/doc/baiduremen.html)
+[https://api.aa1.cn/doc/.html](https://api.aa1.cn/doc/.html)
+[请保存本API链接](https://api.aa1.cn/)
+[夏柔API](https://api.aa1.cn)
+[作者主页](https://api.aa1.cn/author/)
+[参与公益事业发展者](https://api.aa1.cn/doc/baiduremen.html)
+1. [请求参数](https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0)
+2. [返回示例](https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0)
+3. [返回参数](https://api.aa1.cn/doc/baiduremen.html#%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)
+4. [小白教程](https://api.aa1.cn/doc/baiduremen.html#%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B)
+5. [生成代码](https://api.aa1.cn/doc/baiduremen.html#%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81)
+6. [实时调试](https://api.aa1.cn/doc/baiduremen.html#%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95)
+7. [在线调试](https://api.aa1.cn/doc/baiduremen.html#%E5%9C%A8%E7%BA%BF%E8%B0%83%E8%AF%95)
+[请求参数](https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0)
+[返回示例](https://api.aa1.cn/doc/baiduremen.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0)
+[返回参数](https://api.aa1.cn/doc/baiduremen.html#%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0)
+[小白教程](https://api.aa1.cn/doc/baiduremen.html#%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B)
+[生成代码](https://api.aa1.cn/doc/baiduremen.html#%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81)
+[实时调试](https://api.aa1.cn/doc/baiduremen.html#%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95)
+[在线调试](https://api.aa1.cn/doc/baiduremen.html#%E5%9C%A8%E7%BA%BF%E8%B0%83%E8%AF%95)
+[星座运势](https://api.aa1.cn/doc/52xingzuo.html)
+[分类：生活](https://api.aa1.cn/doc/52xingzuo.html)
+[域名防红缩短-直连](https://api.aa1.cn/doc/ymfhsd-zl.html)
+[分类：站长工具](https://api.aa1.cn/doc/ymfhsd-zl.html)
+[国家名称大全](https://api.aa1.cn/doc/country.html)
+[分类：生活](https://api.aa1.cn/doc/country.html)
