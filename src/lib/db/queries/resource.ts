@@ -9,13 +9,14 @@ import {
 } from "../schema";
 import type { PageResult } from "@/types";
 
-// 获取首页资源信息
+// 获取首页资源信息（限制 100 条避免超时）
 export async function getHomeResource(): Promise<Resource[]> {
   return await db
     .select()
     .from(resource)
     .where(eq(resource.isShowHome, 1))
-    .orderBy(desc(resource.id));
+    .orderBy(desc(resource.id))
+    .limit(100);  // 添加限制避免查询超时
 }
 
 export async function getAllResource(): Promise<Resource[]> {
